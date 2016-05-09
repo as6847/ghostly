@@ -1,0 +1,146 @@
+/*normal*/
+body{
+	font-family: Cambria,Georgia,serif;
+	background-color: #a6a6a6;
+}
+
+div#buttons{
+	text-align: center;
+	float: center;
+	padding: 20px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+div#base{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+div#ghost{
+	float: left;
+	position: relative;
+	left: -50%;
+	margin-top: 100px;
+}
+
+#ghost text{
+	font-size: 30px;
+}
+
+#buttons text{
+	stroke: #464261;
+	fill: #464261;
+	cursor: pointer;
+}
+
+p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*svg base colors*/
+
+svg#one rect{
+	transition-duration: .5s;
+}
+
+svg#one:hover rect{
+	stroke: #6e7c72;
+	fill: #434c45;
+	opacity: 0.5;
+	transition-duration: .5s;
+}
+
+svg#one:active rect{
+	transform: translateY(4px);
+}
+
+svg#two rect{
+	transition-duration: .5s;
+}
+
+svg#two:hover rect{
+	fill: #4e3d52;
+	stroke: #927599;
+	opacity: 0.6;
+	transition-duration: .5s;
+}
+
+svg#two:active rect{
+	transform: translateY(4px);
+}
+
+svg#three rect{
+	transition-duration: .5s;
+}
+
+svg#three:hover rect{
+	fill: #303941;
+	opacity: 0.5;
+	stroke: #6a7e90;
+	transition-duration: .5s;
+}
+
+svg#three:active rect{
+	transform: translateY(4px);
+}
+
+svg#four rect{
+	transition-duration: .5s;
+}
+
+svg#four:hover rect{
+	fill: #463434;
+	stroke: #906a6a;
+	opacity: 0.5;
+	transition-duration: .5s;
+}
+
+svg#four:active rect{
+	transform: translateY(4px);
+}
+
+svg#five rect{
+	transition-duration: .5s;
+}
+
+svg#five:hover rect{
+	fill: #164a4b;
+	stroke: #2e9799;
+	opacity: 0.5;
+	transition-duration: .5s;
+}
+
+svg#five:active rect{
+	transform: translateY(4px);
+}
+
+svg#six rect{
+	transition-duration: .5s;
+}
+
+svg#six:hover rect{
+	fill: #554f3f;
+	opacity: 0.5;
+	stroke: #958a6f;
+	transition-duration: .5s;
+}
+
+svg#six:active rect{
+	transform: translateY(4px);
+}
+
+/*idle animation*/
+#ghost2{
+	animation: floating 3s ease-out infinite;
+}
+
+@keyframes floating {
+	60% {
+		transform: translate(0, 35px);
+	}
+}
